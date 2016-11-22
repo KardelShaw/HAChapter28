@@ -10,6 +10,9 @@
 		992527EC1DE1D1B200A49C12 /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992527E21DE1D1B200A49C12 /* PersistenceLayer.framework */; };
 		992527F11DE1D1B200A49C12 /* PersistenceLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992527F01DE1D1B200A49C12 /* PersistenceLayerTests.m */; };
 		992527F31DE1D1B200A49C12 /* PersistenceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 992527E51DE1D1B200A49C12 /* PersistenceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99E169CF1DE40B80001DE61D /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E169CD1DE40B80001DE61D /* libsqlite3.0.tbd */; };
+		99E169D01DE40B80001DE61D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E169CE1DE40B80001DE61D /* libsqlite3.tbd */; };
+		99E169D21DE418FC001DE61D /* DBFile in Resources */ = {isa = PBXBuildFile; fileRef = 99E169D11DE418FC001DE61D /* DBFile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		992527EB1DE1D1B200A49C12 /* PersistenceLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenceLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		992527F01DE1D1B200A49C12 /* PersistenceLayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistenceLayerTests.m; sourceTree = "<group>"; };
 		992527F21DE1D1B200A49C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99E169CD1DE40B80001DE61D /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		99E169CE1DE40B80001DE61D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		99E169D11DE418FC001DE61D /* DBFile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DBFile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E169CF1DE40B80001DE61D /* libsqlite3.0.tbd in Frameworks */,
+				99E169D01DE40B80001DE61D /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,9 +61,11 @@
 		992527D81DE1D1B200A49C12 = {
 			isa = PBXGroup;
 			children = (
+				99E169D11DE418FC001DE61D /* DBFile */,
 				992527E41DE1D1B200A49C12 /* PersistenceLayer */,
 				992527EF1DE1D1B200A49C12 /* PersistenceLayerTests */,
 				992527E31DE1D1B200A49C12 /* Products */,
+				99E169CC1DE40B80001DE61D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +94,15 @@
 				992527F21DE1D1B200A49C12 /* Info.plist */,
 			);
 			path = PersistenceLayerTests;
+			sourceTree = "<group>";
+		};
+		99E169CC1DE40B80001DE61D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99E169CD1DE40B80001DE61D /* libsqlite3.0.tbd */,
+				99E169CE1DE40B80001DE61D /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E169D21DE418FC001DE61D /* DBFile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +412,7 @@
 				992527F81DE1D1B200A49C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		992527F91DE1D1B200A49C12 /* Build configuration list for PBXNativeTarget "PersistenceLayerTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +421,7 @@
 				992527FB1DE1D1B200A49C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
