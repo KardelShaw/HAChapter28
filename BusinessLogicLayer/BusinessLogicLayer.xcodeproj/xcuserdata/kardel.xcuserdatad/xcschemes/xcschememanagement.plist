@@ -7,7 +7,17 @@
 		<key>BusinessLogicLayer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
+		</dict>
+		<key>EventsBLTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>ScheduleBLTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>992527C61DE1D1A300A49C12</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>992FDD171DE7202700B52644</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>992FDD261DE7204100B52644</key>
 		<dict>
 			<key>primary</key>
 			<true/>

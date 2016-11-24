@@ -10,11 +10,33 @@
 		992527C81DE1D1A300A49C12 /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992527BE1DE1D1A300A49C12 /* BusinessLogicLayer.framework */; };
 		992527CD1DE1D1A300A49C12 /* BusinessLogicLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992527CC1DE1D1A300A49C12 /* BusinessLogicLayerTests.m */; };
 		992527CF1DE1D1A300A49C12 /* BusinessLogicLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 992527C11DE1D1A300A49C12 /* BusinessLogicLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		992528031DE1D1DB00A49C12 /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992528021DE1D1DB00A49C12 /* PersistenceLayer.framework */; };
+		992FDD0A1DE71C0300B52644 /* EventsBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 992FDD081DE71C0300B52644 /* EventsBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		992FDD0B1DE71C0300B52644 /* EventsBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 992FDD091DE71C0300B52644 /* EventsBL.m */; };
+		992FDD0E1DE71C1300B52644 /* ScheduleBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 992FDD0C1DE71C1300B52644 /* ScheduleBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		992FDD0F1DE71C1300B52644 /* ScheduleBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 992FDD0D1DE71C1300B52644 /* ScheduleBL.m */; };
+		992FDD111DE71DC200B52644 /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FDD101DE71DC200B52644 /* PersistenceLayer.framework */; };
+		992FDD1B1DE7202700B52644 /* EventsBLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992FDD1A1DE7202700B52644 /* EventsBLTests.m */; };
+		992FDD1D1DE7202700B52644 /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992527BE1DE1D1A300A49C12 /* BusinessLogicLayer.framework */; };
+		992FDD2A1DE7204100B52644 /* ScheduleBLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992FDD291DE7204100B52644 /* ScheduleBLTests.m */; };
+		992FDD2C1DE7204100B52644 /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992527BE1DE1D1A300A49C12 /* BusinessLogicLayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		992527C91DE1D1A300A49C12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 992527B51DE1D1A300A49C12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 992527BD1DE1D1A300A49C12;
+			remoteInfo = BusinessLogicLayer;
+		};
+		992FDD1E1DE7202700B52644 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 992527B51DE1D1A300A49C12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 992527BD1DE1D1A300A49C12;
+			remoteInfo = BusinessLogicLayer;
+		};
+		992FDD2D1DE7204100B52644 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 992527B51DE1D1A300A49C12 /* Project object */;
 			proxyType = 1;
@@ -31,6 +53,17 @@
 		992527CC1DE1D1A300A49C12 /* BusinessLogicLayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessLogicLayerTests.m; sourceTree = "<group>"; };
 		992527CE1DE1D1A300A49C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		992528021DE1D1DB00A49C12 /* PersistenceLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersistenceLayer.framework; path = "../PersistenceLayer/build/Debug-iphoneos/PersistenceLayer.framework"; sourceTree = "<group>"; };
+		992FDD081DE71C0300B52644 /* EventsBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsBL.h; sourceTree = "<group>"; };
+		992FDD091DE71C0300B52644 /* EventsBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsBL.m; sourceTree = "<group>"; };
+		992FDD0C1DE71C1300B52644 /* ScheduleBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleBL.h; sourceTree = "<group>"; };
+		992FDD0D1DE71C1300B52644 /* ScheduleBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleBL.m; sourceTree = "<group>"; };
+		992FDD101DE71DC200B52644 /* PersistenceLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersistenceLayer.framework; path = "../../../../Library/Developer/Xcode/DerivedData/HAchapter28-bxjczsgcnawswleditffqlbjefuq/Build/Products/Debug-iphonesimulator/PersistenceLayer.framework"; sourceTree = "<group>"; };
+		992FDD181DE7202700B52644 /* EventsBLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsBLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		992FDD1A1DE7202700B52644 /* EventsBLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventsBLTests.m; sourceTree = "<group>"; };
+		992FDD1C1DE7202700B52644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		992FDD271DE7204100B52644 /* ScheduleBLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScheduleBLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		992FDD291DE7204100B52644 /* ScheduleBLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleBLTests.m; sourceTree = "<group>"; };
+		992FDD2B1DE7204100B52644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				992528031DE1D1DB00A49C12 /* PersistenceLayer.framework in Frameworks */,
+				992FDD111DE71DC200B52644 /* PersistenceLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +83,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		992FDD151DE7202700B52644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992FDD1D1DE7202700B52644 /* BusinessLogicLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992FDD241DE7204100B52644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992FDD2C1DE7204100B52644 /* BusinessLogicLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -58,6 +107,8 @@
 			children = (
 				992527C01DE1D1A300A49C12 /* BusinessLogicLayer */,
 				992527CB1DE1D1A300A49C12 /* BusinessLogicLayerTests */,
+				992FDD191DE7202700B52644 /* EventsBLTests */,
+				992FDD281DE7204100B52644 /* ScheduleBLTests */,
 				992527BF1DE1D1A300A49C12 /* Products */,
 				992528011DE1D1DB00A49C12 /* Frameworks */,
 			);
@@ -68,6 +119,8 @@
 			children = (
 				992527BE1DE1D1A300A49C12 /* BusinessLogicLayer.framework */,
 				992527C71DE1D1A300A49C12 /* BusinessLogicLayerTests.xctest */,
+				992FDD181DE7202700B52644 /* EventsBLTests.xctest */,
+				992FDD271DE7204100B52644 /* ScheduleBLTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +128,10 @@
 		992527C01DE1D1A300A49C12 /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
+				992FDD081DE71C0300B52644 /* EventsBL.h */,
+				992FDD091DE71C0300B52644 /* EventsBL.m */,
+				992FDD0C1DE71C1300B52644 /* ScheduleBL.h */,
+				992FDD0D1DE71C1300B52644 /* ScheduleBL.m */,
 				992527C11DE1D1A300A49C12 /* BusinessLogicLayer.h */,
 				992527C21DE1D1A300A49C12 /* Info.plist */,
 			);
@@ -93,9 +150,28 @@
 		992528011DE1D1DB00A49C12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				992FDD101DE71DC200B52644 /* PersistenceLayer.framework */,
 				992528021DE1D1DB00A49C12 /* PersistenceLayer.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		992FDD191DE7202700B52644 /* EventsBLTests */ = {
+			isa = PBXGroup;
+			children = (
+				992FDD1A1DE7202700B52644 /* EventsBLTests.m */,
+				992FDD1C1DE7202700B52644 /* Info.plist */,
+			);
+			path = EventsBLTests;
+			sourceTree = "<group>";
+		};
+		992FDD281DE7204100B52644 /* ScheduleBLTests */ = {
+			isa = PBXGroup;
+			children = (
+				992FDD291DE7204100B52644 /* ScheduleBLTests.m */,
+				992FDD2B1DE7204100B52644 /* Info.plist */,
+			);
+			path = ScheduleBLTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,7 +181,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				992FDD0E1DE71C1300B52644 /* ScheduleBL.h in Headers */,
 				992527CF1DE1D1A300A49C12 /* BusinessLogicLayer.h in Headers */,
+				992FDD0A1DE71C0300B52644 /* EventsBL.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +226,42 @@
 			productReference = 992527C71DE1D1A300A49C12 /* BusinessLogicLayerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		992FDD171DE7202700B52644 /* EventsBLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 992FDD201DE7202700B52644 /* Build configuration list for PBXNativeTarget "EventsBLTests" */;
+			buildPhases = (
+				992FDD141DE7202700B52644 /* Sources */,
+				992FDD151DE7202700B52644 /* Frameworks */,
+				992FDD161DE7202700B52644 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				992FDD1F1DE7202700B52644 /* PBXTargetDependency */,
+			);
+			name = EventsBLTests;
+			productName = EventsBLTests;
+			productReference = 992FDD181DE7202700B52644 /* EventsBLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		992FDD261DE7204100B52644 /* ScheduleBLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 992FDD2F1DE7204100B52644 /* Build configuration list for PBXNativeTarget "ScheduleBLTests" */;
+			buildPhases = (
+				992FDD231DE7204100B52644 /* Sources */,
+				992FDD241DE7204100B52644 /* Frameworks */,
+				992FDD251DE7204100B52644 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				992FDD2E1DE7204100B52644 /* PBXTargetDependency */,
+			);
+			name = ScheduleBLTests;
+			productName = ScheduleBLTests;
+			productReference = 992FDD271DE7204100B52644 /* ScheduleBLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -163,6 +277,16 @@
 						ProvisioningStyle = Automatic;
 					};
 					992527C61DE1D1A300A49C12 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 99VZLW8EF5;
+						ProvisioningStyle = Automatic;
+					};
+					992FDD171DE7202700B52644 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 99VZLW8EF5;
+						ProvisioningStyle = Automatic;
+					};
+					992FDD261DE7204100B52644 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 99VZLW8EF5;
 						ProvisioningStyle = Automatic;
@@ -183,6 +307,8 @@
 			targets = (
 				992527BD1DE1D1A300A49C12 /* BusinessLogicLayer */,
 				992527C61DE1D1A300A49C12 /* BusinessLogicLayerTests */,
+				992FDD171DE7202700B52644 /* EventsBLTests */,
+				992FDD261DE7204100B52644 /* ScheduleBLTests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +328,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		992FDD161DE7202700B52644 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992FDD251DE7204100B52644 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -209,6 +349,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				992FDD0F1DE71C1300B52644 /* ScheduleBL.m in Sources */,
+				992FDD0B1DE71C0300B52644 /* EventsBL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +362,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		992FDD141DE7202700B52644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992FDD1B1DE7202700B52644 /* EventsBLTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992FDD231DE7204100B52644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992FDD2A1DE7204100B52644 /* ScheduleBLTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -227,6 +385,16 @@
 			isa = PBXTargetDependency;
 			target = 992527BD1DE1D1A300A49C12 /* BusinessLogicLayer */;
 			targetProxy = 992527C91DE1D1A300A49C12 /* PBXContainerItemProxy */;
+		};
+		992FDD1F1DE7202700B52644 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 992527BD1DE1D1A300A49C12 /* BusinessLogicLayer */;
+			targetProxy = 992FDD1E1DE7202700B52644 /* PBXContainerItemProxy */;
+		};
+		992FDD2E1DE7204100B52644 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 992527BD1DE1D1A300A49C12 /* BusinessLogicLayer */;
+			targetProxy = 992FDD2D1DE7204100B52644 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -330,6 +498,7 @@
 		992527D31DE1D1A300A49C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 99VZLW8EF5;
@@ -348,6 +517,7 @@
 		992527D41DE1D1A300A49C12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 99VZLW8EF5;
@@ -385,6 +555,54 @@
 			};
 			name = Release;
 		};
+		992FDD211DE7202700B52644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = 99VZLW8EF5;
+				INFOPLIST_FILE = EventsBLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaw.kardel.EventsBLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		992FDD221DE7202700B52644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = 99VZLW8EF5;
+				INFOPLIST_FILE = EventsBLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaw.kardel.EventsBLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		992FDD301DE7204100B52644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = 99VZLW8EF5;
+				INFOPLIST_FILE = ScheduleBLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaw.kardel.ScheduleBLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		992FDD311DE7204100B52644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = 99VZLW8EF5;
+				INFOPLIST_FILE = ScheduleBLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaw.kardel.ScheduleBLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -404,12 +622,30 @@
 				992527D41DE1D1A300A49C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		992527D51DE1D1A300A49C12 /* Build configuration list for PBXNativeTarget "BusinessLogicLayerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				992527D61DE1D1A300A49C12 /* Debug */,
 				992527D71DE1D1A300A49C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		992FDD201DE7202700B52644 /* Build configuration list for PBXNativeTarget "EventsBLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992FDD211DE7202700B52644 /* Debug */,
+				992FDD221DE7202700B52644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		992FDD2F1DE7204100B52644 /* Build configuration list for PBXNativeTarget "ScheduleBLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992FDD301DE7204100B52644 /* Debug */,
+				992FDD311DE7204100B52644 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

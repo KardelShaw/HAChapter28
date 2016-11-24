@@ -15,7 +15,7 @@
 		992527911DE1D19500A49C12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9925278F1DE1D19500A49C12 /* LaunchScreen.storyboard */; };
 		9925279C1DE1D19500A49C12 /* PresentationLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9925279B1DE1D19500A49C12 /* PresentationLayerTests.m */; };
 		992527A71DE1D19500A49C12 /* PresentationLayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992527A61DE1D19500A49C12 /* PresentationLayerUITests.m */; };
-		992528001DE1D1D100A49C12 /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992527FF1DE1D1D100A49C12 /* BusinessLogicLayer.framework */; };
+		992FDD131DE71DD800B52644 /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FDD121DE71DD800B52644 /* BusinessLogicLayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +54,7 @@
 		992527A81DE1D19500A49C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		992527FD1DE1D1C500A49C12 /* PersistenceLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersistenceLayer.framework; path = "../PersistenceLayer/build/Debug-iphoneos/PersistenceLayer.framework"; sourceTree = "<group>"; };
 		992527FF1DE1D1D100A49C12 /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BusinessLogicLayer.framework; path = "../BusinessLogicLayer/build/Debug-iphoneos/BusinessLogicLayer.framework"; sourceTree = "<group>"; };
+		992FDD121DE71DD800B52644 /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BusinessLogicLayer.framework; path = "../../../../Library/Developer/Xcode/DerivedData/HAchapter28-bxjczsgcnawswleditffqlbjefuq/Build/Products/Debug-iphonesimulator/BusinessLogicLayer.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				992528001DE1D1D100A49C12 /* BusinessLogicLayer.framework in Frameworks */,
+				992FDD131DE71DD800B52644 /* BusinessLogicLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +149,7 @@
 		992527FC1DE1D1C500A49C12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				992FDD121DE71DD800B52644 /* BusinessLogicLayer.framework */,
 				992527FF1DE1D1D100A49C12 /* BusinessLogicLayer.framework */,
 				992527FD1DE1D1C500A49C12 /* PersistenceLayer.framework */,
 			);
@@ -528,6 +530,7 @@
 				992527AD1DE1D19500A49C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		992527AE1DE1D19500A49C12 /* Build configuration list for PBXNativeTarget "PresentationLayerTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +539,7 @@
 				992527B01DE1D19500A49C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		992527B11DE1D19500A49C12 /* Build configuration list for PBXNativeTarget "PresentationLayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +548,7 @@
 				992527B31DE1D19500A49C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
