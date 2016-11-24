@@ -29,12 +29,32 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO">
+            skipped = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "992527EA1DE1D1B200A49C12"
                BuildableName = "PersistenceLayerTests.xctest"
                BlueprintName = "PersistenceLayerTests"
+               ReferencedContainer = "container:PersistenceLayer.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "992FDCE61DE6D5A800B52644"
+               BuildableName = "EventsDAOTests.xctest"
+               BlueprintName = "EventsDAOTests"
+               ReferencedContainer = "container:PersistenceLayer.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "992FDCFC1DE6E62E00B52644"
+               BuildableName = "ScheduleDAOTests.xctest"
+               BlueprintName = "ScheduleDAOTests"
                ReferencedContainer = "container:PersistenceLayer.xcodeproj">
             </BuildableReference>
          </TestableReference>
