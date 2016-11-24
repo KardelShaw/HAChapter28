@@ -24,11 +24,11 @@ static ScheduleDAO *sharedSingleton = nil;
     
     if ([self openDB]) {
         
-        NSString *sql = @"INSERT INTO Schedule(GameDate, GameTime, GameInfo, Event) VALUES(?,?,?,?)";
+        NSString *sql = @"INSERT INTO Schedule (GameDate, GameTime, GameInfo, EventID) VALUES (?,?,?,?)";
         
         sqlite3_stmt *statement;
         
-        if (sqlite3_prepare_v2(db, [sql UTF8String], -1, &statement, NULL) == SQLITE_DONE) {
+        if (sqlite3_prepare_v2(db, [sql UTF8String], -1, &statement, NULL) == SQLITE_OK) {
             
             sqlite3_bind_text(statement, 1, [model.GameDate UTF8String], -1, NULL);
             sqlite3_bind_text(statement, 2, [model.GameTime UTF8String], -1, NULL);
@@ -65,6 +65,8 @@ static ScheduleDAO *sharedSingleton = nil;
             sqlite3_exec(db, "ROLLBACK TRANSACTION", NULL, NULL, NULL);
             NSAssert(FALSE, @"删除数据失败。");
         }
+        //提交事务
+        sqlite3_exec(db, "COMMIT TRANSACTION", NULL, NULL, NULL);
         
         sqlite3_close(db);
     }
@@ -74,24 +76,24 @@ static ScheduleDAO *sharedSingleton = nil;
 
 - (int)modifySchedule:(Schedule *)model {
     
-    NSString *sql = @"UPDATE Schedule SET GameDate=?, GameTime=?, GameInfo=?, EventID=? where ScheduleID=?";
-    
-    sqlite3_stmt *statement;
-    
-    if (sqlite3_prepare_v2(db, [sql UTF8String], -1, &statement, NULL) == SQLITE_OK) {
+    if ([self openDB]) {
+        NSString *sql = @"UPDATE Schedule SET GameDate=?, GameTime=?, GameInfo=?, EventID=? where ScheduleID=?";
         
-        sqlite3_bind_text(statement, 1, [model.GameDate UTF8String], -1, NULL);
-        sqlite3_bind_text(statement, 2, [model.GameTime UTF8String], -1, NULL);
-        sqlite3_bind_text(statement, 3, [model.GameInfo UTF8String], -1, NULL);
-        sqlite3_bind_int(statement, 4, model.Event.EventID);
-        sqlite3_bind_int(statement, 5, model.ScheduleID);
+        sqlite3_stmt *statement;
         
-        if (sqlite3_step(statement) != SQLITE_DONE) {
-            sqlite3_finalize(statement);
-            sqlite3_close(db);
-            NSAssert(FALSE, @"修改数据失败。");
+        if (sqlite3_prepare_v2(db, [sql UTF8String], -1, &statement, NULL) == SQLITE_OK) {
+            
+            sqlite3_bind_text(statement, 1, [model.GameDate UTF8String], -1, NULL);
+            sqlite3_bind_text(statement, 2, [model.GameTime UTF8String], -1, NULL);
+            sqlite3_bind_text(statement, 3, [model.GameInfo UTF8String], -1, NULL);
+            sqlite3_bind_int(statement, 4, model.Event.EventID);
+            sqlite3_bind_int(statement, 5, model.ScheduleID);
+            
+            if (sqlite3_step(statement) != SQLITE_DONE) {
+                
+                NSAssert(FALSE, @"修改数据失败。");
+            }
         }
-        
         sqlite3_finalize(statement);
         sqlite3_close(db);
     }
@@ -101,17 +103,17 @@ static ScheduleDAO *sharedSingleton = nil;
 
 - (NSMutableArray *)findAll {
     
-    NSMutableArray *listData;
+    NSMutableArray *listData = [[NSMutableArray alloc] init];
     
     if ([self openDB]) {
         
-        NSString *sql = @"SELECT GameDate, GameTime, GameInfo, EventID, ScheduleID FROM Schedule";
+        NSString *sql = @"SELECT GameDate, GameTime, GameInfo, EventID, ScheduleID from Schedule";
         
         sqlite3_stmt *statement;
         
-        if (sqlite3_prepare_v2(db, [sql UTF8String], -1, &statement, NULL) != SQLITE_OK) {
+        if (sqlite3_prepare_v2(db, [sql UTF8String], -1, &statement, NULL) == SQLITE_OK) {
             
-            listData = [[NSMutableArray alloc] init];
+            
             
             while (sqlite3_step(statement) == SQLITE_ROW) {
                 
@@ -134,11 +136,9 @@ static ScheduleDAO *sharedSingleton = nil;
                 
                 [listData addObject:schedule];
                 
-                sqlite3_finalize(statement);
-                sqlite3_close(db);
                 
-                return listData;
             }
+            
             
         }
         sqlite3_finalize(statement);
@@ -156,7 +156,7 @@ static ScheduleDAO *sharedSingleton = nil;
     
     if ([self openDB]) {
         
-        NSString *sql = @"SELECT GameDate, GameTime, GameInfo, EventID, ScheduleID where ScheduleID=?";
+        NSString *sql = @"SELECT GameDate, GameTime, GameInfo, EventID, ScheduleID from Schedule where ScheduleID=?";
         
         sqlite3_stmt *statement;
         

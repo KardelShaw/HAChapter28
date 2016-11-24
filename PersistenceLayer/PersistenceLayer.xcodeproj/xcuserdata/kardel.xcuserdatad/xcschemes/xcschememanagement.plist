@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>EventsDAOTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>PersistenceLayer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>ScheduleDAOTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
@@ -18,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>992527EA1DE1D1B200A49C12</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>992FDCE61DE6D5A800B52644</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>992FDCFC1DE6E62E00B52644</key>
 		<dict>
 			<key>primary</key>
 			<true/>

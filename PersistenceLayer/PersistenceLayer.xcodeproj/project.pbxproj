@@ -10,6 +10,12 @@
 		992527EC1DE1D1B200A49C12 /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992527E21DE1D1B200A49C12 /* PersistenceLayer.framework */; };
 		992527F11DE1D1B200A49C12 /* PersistenceLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992527F01DE1D1B200A49C12 /* PersistenceLayerTests.m */; };
 		992527F31DE1D1B200A49C12 /* PersistenceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 992527E51DE1D1B200A49C12 /* PersistenceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		992FDCEA1DE6D5A800B52644 /* EventsDAOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992FDCE91DE6D5A800B52644 /* EventsDAOTests.m */; };
+		992FDCEC1DE6D5A800B52644 /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992527E21DE1D1B200A49C12 /* PersistenceLayer.framework */; };
+		992FDCF51DE6E1DB00B52644 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 992FDCF31DE6E1DB00B52644 /* DBConfig.plist */; };
+		992FDCF81DE6E25C00B52644 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = 992FDCF71DE6E25C00B52644 /* create_load.sql */; };
+		992FDD001DE6E62E00B52644 /* ScheduleDAOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992FDCFF1DE6E62E00B52644 /* ScheduleDAOTests.m */; };
+		992FDD021DE6E62E00B52644 /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992527E21DE1D1B200A49C12 /* PersistenceLayer.framework */; };
 		9962024F1DE42CAE00BC1DB6 /* EventsDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 9962024D1DE42CAE00BC1DB6 /* EventsDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		996202501DE42CAE00BC1DB6 /* EventsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 9962024E1DE42CAE00BC1DB6 /* EventsDAO.m */; };
 		996202531DE42E1000BC1DB6 /* ScheduleDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 996202511DE42E1000BC1DB6 /* ScheduleDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -22,13 +28,26 @@
 		99D3F22C1DE41CAD00E36821 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D3F22A1DE41CAD00E36821 /* Schedule.m */; };
 		99E169CF1DE40B80001DE61D /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E169CD1DE40B80001DE61D /* libsqlite3.0.tbd */; };
 		99E169D01DE40B80001DE61D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E169CE1DE40B80001DE61D /* libsqlite3.tbd */; };
-		99E169D21DE418FC001DE61D /* DBFile in Resources */ = {isa = PBXBuildFile; fileRef = 99E169D11DE418FC001DE61D /* DBFile */; };
 		99E169D71DE41B56001DE61D /* Events.h in Headers */ = {isa = PBXBuildFile; fileRef = 99E169D51DE41B56001DE61D /* Events.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99E169D81DE41B56001DE61D /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E169D61DE41B56001DE61D /* Events.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		992527ED1DE1D1B200A49C12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 992527D91DE1D1B200A49C12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 992527E11DE1D1B200A49C12;
+			remoteInfo = PersistenceLayer;
+		};
+		992FDCED1DE6D5A800B52644 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 992527D91DE1D1B200A49C12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 992527E11DE1D1B200A49C12;
+			remoteInfo = PersistenceLayer;
+		};
+		992FDD031DE6E62E00B52644 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 992527D91DE1D1B200A49C12 /* Project object */;
 			proxyType = 1;
@@ -44,6 +63,14 @@
 		992527EB1DE1D1B200A49C12 /* PersistenceLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenceLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		992527F01DE1D1B200A49C12 /* PersistenceLayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistenceLayerTests.m; sourceTree = "<group>"; };
 		992527F21DE1D1B200A49C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		992FDCE71DE6D5A800B52644 /* EventsDAOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsDAOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		992FDCE91DE6D5A800B52644 /* EventsDAOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventsDAOTests.m; sourceTree = "<group>"; };
+		992FDCEB1DE6D5A800B52644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		992FDCF31DE6E1DB00B52644 /* DBConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DBConfig.plist; path = DBFile/DBConfig.plist; sourceTree = "<group>"; };
+		992FDCF71DE6E25C00B52644 /* create_load.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_load.sql; sourceTree = "<group>"; };
+		992FDCFD1DE6E62E00B52644 /* ScheduleDAOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScheduleDAOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		992FDCFF1DE6E62E00B52644 /* ScheduleDAOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleDAOTests.m; sourceTree = "<group>"; };
+		992FDD011DE6E62E00B52644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9962024D1DE42CAE00BC1DB6 /* EventsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsDAO.h; sourceTree = "<group>"; };
 		9962024E1DE42CAE00BC1DB6 /* EventsDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsDAO.m; sourceTree = "<group>"; };
 		996202511DE42E1000BC1DB6 /* ScheduleDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDAO.h; sourceTree = "<group>"; };
@@ -56,7 +83,6 @@
 		99D3F22A1DE41CAD00E36821 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
 		99E169CD1DE40B80001DE61D /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		99E169CE1DE40B80001DE61D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		99E169D11DE418FC001DE61D /* DBFile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DBFile; sourceTree = "<group>"; };
 		99E169D51DE41B56001DE61D /* Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Events.h; sourceTree = "<group>"; };
 		99E169D61DE41B56001DE61D /* Events.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Events.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,15 +105,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		992FDCE41DE6D5A800B52644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992FDCEC1DE6D5A800B52644 /* PersistenceLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992FDCFA1DE6E62E00B52644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992FDD021DE6E62E00B52644 /* PersistenceLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		992527D81DE1D1B200A49C12 = {
 			isa = PBXGroup;
 			children = (
-				99E169D11DE418FC001DE61D /* DBFile */,
+				992FDCF21DE6E1C800B52644 /* DBFile */,
 				992527E41DE1D1B200A49C12 /* PersistenceLayer */,
 				992527EF1DE1D1B200A49C12 /* PersistenceLayerTests */,
+				992FDCE81DE6D5A800B52644 /* EventsDAOTests */,
+				992FDCFE1DE6E62E00B52644 /* ScheduleDAOTests */,
 				992527E31DE1D1B200A49C12 /* Products */,
 				99E169CC1DE40B80001DE61D /* Frameworks */,
 			);
@@ -98,6 +142,8 @@
 			children = (
 				992527E21DE1D1B200A49C12 /* PersistenceLayer.framework */,
 				992527EB1DE1D1B200A49C12 /* PersistenceLayerTests.xctest */,
+				992FDCE71DE6D5A800B52644 /* EventsDAOTests.xctest */,
+				992FDCFD1DE6E62E00B52644 /* ScheduleDAOTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +168,33 @@
 				992527F21DE1D1B200A49C12 /* Info.plist */,
 			);
 			path = PersistenceLayerTests;
+			sourceTree = "<group>";
+		};
+		992FDCE81DE6D5A800B52644 /* EventsDAOTests */ = {
+			isa = PBXGroup;
+			children = (
+				992FDCE91DE6D5A800B52644 /* EventsDAOTests.m */,
+				992FDCEB1DE6D5A800B52644 /* Info.plist */,
+			);
+			path = EventsDAOTests;
+			sourceTree = "<group>";
+		};
+		992FDCF21DE6E1C800B52644 /* DBFile */ = {
+			isa = PBXGroup;
+			children = (
+				992FDCF71DE6E25C00B52644 /* create_load.sql */,
+				992FDCF31DE6E1DB00B52644 /* DBConfig.plist */,
+			);
+			name = DBFile;
+			sourceTree = "<group>";
+		};
+		992FDCFE1DE6E62E00B52644 /* ScheduleDAOTests */ = {
+			isa = PBXGroup;
+			children = (
+				992FDCFF1DE6E62E00B52644 /* ScheduleDAOTests.m */,
+				992FDD011DE6E62E00B52644 /* Info.plist */,
+			);
+			path = ScheduleDAOTests;
 			sourceTree = "<group>";
 		};
 		99E169CC1DE40B80001DE61D /* Frameworks */ = {
@@ -214,6 +287,42 @@
 			productReference = 992527EB1DE1D1B200A49C12 /* PersistenceLayerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		992FDCE61DE6D5A800B52644 /* EventsDAOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 992FDCEF1DE6D5A800B52644 /* Build configuration list for PBXNativeTarget "EventsDAOTests" */;
+			buildPhases = (
+				992FDCE31DE6D5A800B52644 /* Sources */,
+				992FDCE41DE6D5A800B52644 /* Frameworks */,
+				992FDCE51DE6D5A800B52644 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				992FDCEE1DE6D5A800B52644 /* PBXTargetDependency */,
+			);
+			name = EventsDAOTests;
+			productName = EventsDAOTests;
+			productReference = 992FDCE71DE6D5A800B52644 /* EventsDAOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		992FDCFC1DE6E62E00B52644 /* ScheduleDAOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 992FDD051DE6E62E00B52644 /* Build configuration list for PBXNativeTarget "ScheduleDAOTests" */;
+			buildPhases = (
+				992FDCF91DE6E62E00B52644 /* Sources */,
+				992FDCFA1DE6E62E00B52644 /* Frameworks */,
+				992FDCFB1DE6E62E00B52644 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				992FDD041DE6E62E00B52644 /* PBXTargetDependency */,
+			);
+			name = ScheduleDAOTests;
+			productName = ScheduleDAOTests;
+			productReference = 992FDCFD1DE6E62E00B52644 /* ScheduleDAOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -229,6 +338,16 @@
 						ProvisioningStyle = Automatic;
 					};
 					992527EA1DE1D1B200A49C12 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 99VZLW8EF5;
+						ProvisioningStyle = Automatic;
+					};
+					992FDCE61DE6D5A800B52644 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 99VZLW8EF5;
+						ProvisioningStyle = Automatic;
+					};
+					992FDCFC1DE6E62E00B52644 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 99VZLW8EF5;
 						ProvisioningStyle = Automatic;
@@ -249,6 +368,8 @@
 			targets = (
 				992527E11DE1D1B200A49C12 /* PersistenceLayer */,
 				992527EA1DE1D1B200A49C12 /* PersistenceLayerTests */,
+				992FDCE61DE6D5A800B52644 /* EventsDAOTests */,
+				992FDCFC1DE6E62E00B52644 /* ScheduleDAOTests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,11 +379,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99E169D21DE418FC001DE61D /* DBFile in Resources */,
+				992FDCF81DE6E25C00B52644 /* create_load.sql in Resources */,
+				992FDCF51DE6E1DB00B52644 /* DBConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		992527E91DE1D1B200A49C12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992FDCE51DE6D5A800B52644 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992FDCFB1DE6E62E00B52644 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,6 +429,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		992FDCE31DE6D5A800B52644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992FDCEA1DE6D5A800B52644 /* EventsDAOTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992FDCF91DE6E62E00B52644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992FDD001DE6E62E00B52644 /* ScheduleDAOTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -300,6 +452,16 @@
 			isa = PBXTargetDependency;
 			target = 992527E11DE1D1B200A49C12 /* PersistenceLayer */;
 			targetProxy = 992527ED1DE1D1B200A49C12 /* PBXContainerItemProxy */;
+		};
+		992FDCEE1DE6D5A800B52644 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 992527E11DE1D1B200A49C12 /* PersistenceLayer */;
+			targetProxy = 992FDCED1DE6D5A800B52644 /* PBXContainerItemProxy */;
+		};
+		992FDD041DE6E62E00B52644 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 992527E11DE1D1B200A49C12 /* PersistenceLayer */;
+			targetProxy = 992FDD031DE6E62E00B52644 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -345,7 +507,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -390,7 +552,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,6 +620,58 @@
 			};
 			name = Release;
 		};
+		992FDCF01DE6D5A800B52644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = 99VZLW8EF5;
+				INFOPLIST_FILE = EventsDAOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaw.kardel.EventsDAOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		992FDCF11DE6D5A800B52644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = 99VZLW8EF5;
+				INFOPLIST_FILE = EventsDAOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaw.kardel.EventsDAOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		992FDD061DE6E62E00B52644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = 99VZLW8EF5;
+				INFOPLIST_FILE = ScheduleDAOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaw.kardel.ScheduleDAOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		992FDD071DE6E62E00B52644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = 99VZLW8EF5;
+				INFOPLIST_FILE = ScheduleDAOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaw.kardel.ScheduleDAOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -487,6 +701,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		992FDCEF1DE6D5A800B52644 /* Build configuration list for PBXNativeTarget "EventsDAOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992FDCF01DE6D5A800B52644 /* Debug */,
+				992FDCF11DE6D5A800B52644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		992FDD051DE6E62E00B52644 /* Build configuration list for PBXNativeTarget "ScheduleDAOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992FDD061DE6E62E00B52644 /* Debug */,
+				992FDD071DE6E62E00B52644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

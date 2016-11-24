@@ -13,7 +13,7 @@
 + (const char *)applicationDocunmentsDirectoryFile:(NSString *)fileName {
     
     NSString *documentDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, TRUE) lastObject];
-    NSString *path = [documentDirectory stringByAppendingString:fileName];
+    NSString *path = [documentDirectory stringByAppendingPathComponent:fileName];
     
     const char *cpath = [path UTF8String];
     
@@ -47,7 +47,7 @@
             sqlite3_exec(db, [sql UTF8String], NULL, NULL, NULL);
             
             //把当前版本号写回到文件中
-            NSString *usql = [[NSString alloc] initWithFormat:@"update DBVersionInfo set version_number = %li", (long)[dbConfigVersion integerValue]];
+            NSString *usql = [[NSString alloc] initWithFormat:@"update DBVersionInfo set version_number = %i", [dbConfigVersion intValue]];
             sqlite3_exec(db, [usql UTF8String], NULL, NULL, NULL);
         } else {
             NSLog(@"数据库打开失败。");
