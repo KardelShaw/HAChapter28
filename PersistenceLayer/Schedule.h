@@ -13,12 +13,12 @@
 
 @property (nonatomic, assign) int ScheduleID;
 
-@property (nonatomic, strong) NSDate *GameDate;
+@property (nonatomic, strong) NSString *GameDate;
 
 @property (nonatomic, strong) NSString *GameTime;
 
 @property (nonatomic, strong) NSString *GameInfo;
 
-@property (nonatomic, strong) Events *EventID;
+@property (nonatomic, strong) Events *Event;
 
 @end

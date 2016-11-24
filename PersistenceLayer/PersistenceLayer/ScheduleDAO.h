@@ -12,4 +12,14 @@
 
 @interface ScheduleDAO : baseDAO
 
+- (int)createSchedule: (Schedule *)model;
+
+- (int)removeSchedule: (Schedule *)model;
+
+- (NSMutableArray *)findAll;
+
+- (int)modifySchedule: (Schedule *)model;
+
+- (Schedule *)findByID: (Schedule *)model;
+
 @end

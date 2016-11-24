@@ -69,7 +69,7 @@
         sqlite3_exec(db, "COMMIT TRANSACTION", NULL, NULL, NULL);
         
         sqlite3_close(db);
-}
+    }
     
     return 0;
 }
@@ -121,22 +121,51 @@
 
 - (int)modify:(Events *)model {
     
-    
+    if ([self openDB]) {
+        
+        NSString *sql = @"UPDATE Events SET EventName=?, EventIcon=?, KeyInfo=?, BasicsInfo=?, OlympicInfo=? where EventID=?";
+        
+        sqlite3_stmt *statement;
+        if (sqlite3_prepare_v2(db, [sql UTF8String], -1, &statement, NULL) == SQLITE_OK) {
+            
+            sqlite3_bind_text(statement, 1, [model.EventName UTF8String], -1, NULL);
+            sqlite3_bind_text(statement, 2, [model.EventIcon UTF8String], -1, NULL);
+            sqlite3_bind_text(statement, 3, [model.KeyInfo UTF8String], -1, NULL);
+            sqlite3_bind_text(statement, 4, [model.BasicsInfo UTF8String], -1, NULL);
+            sqlite3_bind_text(statement, 5, [model.OlympicInfo UTF8String], -1, NULL);
+            sqlite3_bind_int(statement, 6, model.EventID);
+            
+            if (sqlite3_step(statement) != SQLITE_DONE) {
+                sqlite3_finalize(statement);
+                sqlite3_close(db);
+                NSAssert(NO, @"修改数据失败");
+            }
+            
+        }
+        
+        sqlite3_finalize(statement);
+        sqlite3_close(db);
+        
+    }
     
     return 0;
 }
 
-- (Events *)findByID:(int)modelID {
+- (Events *)findByID:(Events *)model {
     
     Events *events;
     
     if ([self openDB]) {
         
-        NSString *qsql = [[NSString alloc] initWithFormat:@"SELECT EventName, EventIcon, KeyInfo, BasicsInfo, OlympicInfo, EventID FROM Events where EventID = %i", modelID];
+        NSString *qsql = @"SELECT EventName, EventIcon, KeyInfo, BasicsInfo, OlympicInfo, EventID FROM Events where EventID = ?" ;
         
         sqlite3_stmt *statement;
         
         if (sqlite3_prepare_v2(db, [qsql UTF8String], -1, &statement, NULL) == SQLITE_OK) {
+            
+            //绑定参数开始
+            sqlite3_bind_int(statement, 1, model.EventID);
+            
             
             //执行
             if (sqlite3_step(statement) == SQLITE_ROW) {
@@ -158,14 +187,18 @@
                 char *cOlympicInfo = (char *)sqlite3_column_text(statement, 4);
                 events.OlympicInfo = [[NSString alloc] initWithUTF8String:cOlympicInfo];
                 
-                events.EventID = modelID;
+                events.EventID = model.EventID;
                 
+                sqlite3_finalize(statement);
+                sqlite3_close(db);
+                
+                return events;
             }
         }
         sqlite3_finalize(statement);
         sqlite3_close(db);
     }
     
-    return events;
+    return nil;
 }
 @end

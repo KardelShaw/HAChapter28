@@ -20,6 +20,6 @@
 
 - (int)modify: (Events *)model;
 
-- (Events *)findByID: (int)modelID;
+- (Events *)findByID: (Events *)modelID;
 
 @end
