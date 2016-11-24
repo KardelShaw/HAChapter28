@@ -12,6 +12,8 @@
 
 @interface ScheduleDAO : baseDAO
 
++ (ScheduleDAO *)sharedInstance;
+
 - (int)createSchedule: (Schedule *)model;
 
 - (int)removeSchedule: (Schedule *)model;
@@ -20,6 +22,6 @@
 
 - (int)modifySchedule: (Schedule *)model;
 
-- (Schedule *)findByID: (Schedule *)model;
+- (Schedule *)findById: (Schedule *)model;
 
 @end

@@ -10,6 +10,16 @@
 
 @implementation ScheduleDAO
 
+static ScheduleDAO *sharedSingleton = nil;
+
++ (ScheduleDAO *)sharedInstance {
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        sharedSingleton = [[super alloc] init];
+    });
+    return sharedSingleton;
+}
+
 - (int)createSchedule:(Schedule *)model {
     
     if ([self openDB]) {
@@ -140,7 +150,7 @@
 }
 
 
-- (Schedule *)findByID:(Schedule *)model {
+- (Schedule *)findById:(Schedule *)model {
 
     Schedule *schedule;
     

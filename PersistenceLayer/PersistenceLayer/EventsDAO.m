@@ -10,6 +10,18 @@
 
 @implementation EventsDAO
 
+static EventsDAO *sharedSingleton = nil;
+
++ (EventsDAO *)sharedInstance {
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        
+        sharedSingleton = [[super alloc] init];
+        
+    });
+    return sharedSingleton;
+}
+
 - (int)create:(Events *)model {
     
     if ([self openDB]) {
@@ -151,7 +163,7 @@
     return 0;
 }
 
-- (Events *)findByID:(Events *)model {
+- (Events *)findById:(Events *)model {
     
     Events *events;
     

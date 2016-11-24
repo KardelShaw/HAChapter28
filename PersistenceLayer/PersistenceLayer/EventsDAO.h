@@ -12,6 +12,8 @@
 
 @interface EventsDAO : baseDAO
 
++ (EventsDAO *)sharedInstance;
+
 - (int)create: (Events *)model;
 
 - (int)remove: (Events *)model;
@@ -20,6 +22,6 @@
 
 - (int)modify: (Events *)model;
 
-- (Events *)findByID: (Events *)modelID;
+- (Events *)findById: (Events *)modelID;
 
 @end
