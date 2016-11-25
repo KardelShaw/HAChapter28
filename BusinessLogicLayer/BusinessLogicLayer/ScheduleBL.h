@@ -10,10 +10,12 @@
 
 #import <PersistenceLayer/ScheduleDAO.h>
 #import <PersistenceLayer/Schedule.h>
+#import <PersistenceLayer/EventsDAO.h>
+#import <PersistenceLayer/Events.h>
 
 @interface ScheduleBL : NSObject
 
 
-- (NSMutableArray *)readData;
+- (NSMutableDictionary *)readData;
 
 @end

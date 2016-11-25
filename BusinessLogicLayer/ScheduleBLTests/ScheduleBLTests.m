@@ -63,11 +63,15 @@
     
     self.schedule.ScheduleID = 502;
     
-    NSArray *resList = [self.bl readData];
+    NSMutableDictionary *resList = [self.bl readData];
     
-    Schedule *resSchedule = resList[501];
+    NSArray *allkey = [resList allKeys];
     
-    XCTAssertNotNil(resSchedule, @"查询数据为nil");
+    XCTAssertEqual([allkey count], 18);
+    
+    NSArray *list = resList[self.schedule.GameDate];
+    
+    Schedule *resSchedule = list[0];
     
     XCTAssertEqualObjects(self.schedule.GameDate, resSchedule.GameDate);
     XCTAssertEqualObjects(self.schedule.GameTime, resSchedule.GameTime);
