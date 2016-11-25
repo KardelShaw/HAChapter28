@@ -10,12 +10,33 @@
 
 @interface ScheduleViewController ()
 
+@property (strong, nonatomic) NSDictionary *scheduleDict;
+
+@property (strong, nonatomic) NSArray *arrayGameDateList;
+
 @end
 
 @implementation ScheduleViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    if (self.scheduleDict == nil || [self.scheduleDict count] == 0) {
+        
+        ScheduleBL *bl = [[ScheduleBL alloc] init];
+        
+        NSMutableDictionary *resDict = [bl readData];
+        
+        self.scheduleDict = resDict;
+        
+        NSArray *allkey = [self.scheduleDict allKeys];
+        
+        //对key进行排序
+        self.arrayGameDateList = [allkey sortedArrayUsingSelector:@selector(compare:)];
+        
+        
+    }
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -33,23 +54,56 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    return 0;
+    return [[self.scheduleDict allKeys] count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 0;
+    
+    NSString *strGameDate = self.arrayGameDateList[section];
+    NSArray *schedules = self.scheduleDict[strGameDate];
+    
+    return [schedules count];
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     
-    // Configure the cell...
+    NSString *strGameDate = self.arrayGameDateList[section];
+    
+    return strGameDate;
+    
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    //Configure the cell...
+    NSString *strGameDate = self.arrayGameDateList[indexPath.section];
+    NSArray *schedules = self.scheduleDict[strGameDate];
+    
+    Schedule *schedule = schedules[indexPath.row];
+    
+    NSString *subtitle = [[NSString alloc] initWithFormat:@"%@ | %@", schedule.GameInfo, schedule.Event.EventName];
+    
+    cell.textLabel.text = schedule.GameTime;
+    cell.detailTextLabel.text = subtitle;
     
     return cell;
 }
-*/
+
+- (NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+    NSMutableArray *listTitles = [[NSMutableArray alloc] init];
+    
+    for (NSString *titleStr in self.arrayGameDateList) {
+        NSString *title = [titleStr substringFromIndex:5];
+        [listTitles addObject:title];
+    }
+    
+    return listTitles;
+    
+}
+
 
 /*
 // Override to support conditional editing of the table view.

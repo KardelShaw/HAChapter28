@@ -61,6 +61,10 @@
 		992A826A1DE8278400C33AED /* water-polo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 992A82401DE8278400C33AED /* water-polo.gif */; };
 		992A826B1DE8278400C33AED /* weightlifting.gif in Resources */ = {isa = PBXBuildFile; fileRef = 992A82411DE8278400C33AED /* weightlifting.gif */; };
 		992A826C1DE8278400C33AED /* wrestling.gif in Resources */ = {isa = PBXBuildFile; fileRef = 992A82421DE8278400C33AED /* wrestling.gif */; };
+		992A826E1DE827E600C33AED /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992A826D1DE827E600C33AED /* PersistenceLayer.framework */; };
+		992A826F1DE827E600C33AED /* PersistenceLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992A826D1DE827E600C33AED /* PersistenceLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992A82711DE827E600C33AED /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992A82701DE827E600C33AED /* BusinessLogicLayer.framework */; };
+		992A82721DE827E600C33AED /* BusinessLogicLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992A82701DE827E600C33AED /* BusinessLogicLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		992FDD131DE71DD800B52644 /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FDD121DE71DD800B52644 /* BusinessLogicLayer.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +84,21 @@
 			remoteInfo = PresentationLayer;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		992A82731DE827E600C33AED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				992A826F1DE827E600C33AED /* PersistenceLayer.framework in Embed Frameworks */,
+				992A82721DE827E600C33AED /* BusinessLogicLayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9925277E1DE1D19500A49C12 /* PresentationLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentationLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +169,8 @@
 		992A82401DE8278400C33AED /* water-polo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "water-polo.gif"; path = "../../../../Desktop/iOS开发指南 code/ch28/images/events/water-polo.gif"; sourceTree = "<group>"; };
 		992A82411DE8278400C33AED /* weightlifting.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = weightlifting.gif; path = "../../../../Desktop/iOS开发指南 code/ch28/images/events/weightlifting.gif"; sourceTree = "<group>"; };
 		992A82421DE8278400C33AED /* wrestling.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = wrestling.gif; path = "../../../../Desktop/iOS开发指南 code/ch28/images/events/wrestling.gif"; sourceTree = "<group>"; };
+		992A826D1DE827E600C33AED /* PersistenceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PersistenceLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		992A82701DE827E600C33AED /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BusinessLogicLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		992FDD121DE71DD800B52644 /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BusinessLogicLayer.framework; path = "../../../../Library/Developer/Xcode/DerivedData/HAchapter28-bxjczsgcnawswleditffqlbjefuq/Build/Products/Debug-iphonesimulator/BusinessLogicLayer.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +179,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				992A82711DE827E600C33AED /* BusinessLogicLayer.framework in Frameworks */,
+				992A826E1DE827E600C33AED /* PersistenceLayer.framework in Frameworks */,
 				992FDD131DE71DD800B52644 /* BusinessLogicLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +205,8 @@
 		992527751DE1D19500A49C12 = {
 			isa = PBXGroup;
 			children = (
+				992A82701DE827E600C33AED /* BusinessLogicLayer.framework */,
+				992A826D1DE827E600C33AED /* PersistenceLayer.framework */,
 				992A82181DE8276700C33AED /* eventsImages */,
 				992527801DE1D19500A49C12 /* PresentationLayer */,
 				9925279A1DE1D19500A49C12 /* PresentationLayerTests */,
@@ -320,6 +345,7 @@
 				9925277A1DE1D19500A49C12 /* Sources */,
 				9925277B1DE1D19500A49C12 /* Frameworks */,
 				9925277C1DE1D19500A49C12 /* Resources */,
+				992A82731DE827E600C33AED /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
