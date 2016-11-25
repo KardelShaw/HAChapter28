@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
+#import "EventsViewController.h"
+#import "ScheduleViewController.h"
+#import "CountDownViewController.h"
+#import "AboutViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +22,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    
+//    [self.window makeKeyAndVisible];
+//    
+//    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+//    self.window.rootViewController = tabBarController;
+//    
+//    UIViewController *homeViewController = [[HomeViewController alloc] init];
+//    UIViewController *eventsViewController = [[EventsViewController alloc] init];
+//    UIViewController *scheduleViewController = [[ScheduleViewController alloc] init];
+//    UIViewController *countDownViewController = [[CountDownViewController alloc] init];
+//    UIViewController *aboutViewController = [[AboutViewController alloc] init];
+//    
+//    tabBarController.viewControllers = @[homeViewController, eventsViewController, scheduleViewController, countDownViewController, aboutViewController];
+//    
+    
     return YES;
 }
 

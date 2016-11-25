@@ -65,6 +65,8 @@
 		992A826F1DE827E600C33AED /* PersistenceLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992A826D1DE827E600C33AED /* PersistenceLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		992A82711DE827E600C33AED /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992A82701DE827E600C33AED /* BusinessLogicLayer.framework */; };
 		992A82721DE827E600C33AED /* BusinessLogicLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992A82701DE827E600C33AED /* BusinessLogicLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992CA3B11DE8594B00397A73 /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992CA3B01DE8594B00397A73 /* CountDownViewController.m */; };
+		992CA3B41DE85A4F00397A73 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992CA3B31DE85A4F00397A73 /* AboutViewController.m */; };
 		992FDD131DE71DD800B52644 /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FDD121DE71DD800B52644 /* BusinessLogicLayer.framework */; };
 /* End PBXBuildFile section */
 
@@ -171,6 +173,10 @@
 		992A82421DE8278400C33AED /* wrestling.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = wrestling.gif; path = "../../../../Desktop/iOS开发指南 code/ch28/images/events/wrestling.gif"; sourceTree = "<group>"; };
 		992A826D1DE827E600C33AED /* PersistenceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PersistenceLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		992A82701DE827E600C33AED /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BusinessLogicLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		992CA3AF1DE8594B00397A73 /* CountDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownViewController.h; sourceTree = "<group>"; };
+		992CA3B01DE8594B00397A73 /* CountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownViewController.m; sourceTree = "<group>"; };
+		992CA3B21DE85A4F00397A73 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		992CA3B31DE85A4F00397A73 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		992FDD121DE71DD800B52644 /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BusinessLogicLayer.framework; path = "../../../../Library/Developer/Xcode/DerivedData/HAchapter28-bxjczsgcnawswleditffqlbjefuq/Build/Products/Debug-iphonesimulator/BusinessLogicLayer.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -241,6 +247,10 @@
 				992A82161DE81AE700C33AED /* EventsDetailViewController.m */,
 				992A820F1DE8116300C33AED /* ScheduleViewController.h */,
 				992A82101DE8116300C33AED /* ScheduleViewController.m */,
+				992CA3AF1DE8594B00397A73 /* CountDownViewController.h */,
+				992CA3B01DE8594B00397A73 /* CountDownViewController.m */,
+				992CA3B21DE85A4F00397A73 /* AboutViewController.h */,
+				992CA3B31DE85A4F00397A73 /* AboutViewController.m */,
 				9925278A1DE1D19500A49C12 /* Main.storyboard */,
 				9925278D1DE1D19500A49C12 /* Assets.xcassets */,
 				9925278F1DE1D19500A49C12 /* LaunchScreen.storyboard */,
@@ -514,10 +524,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				992CA3B41DE85A4F00397A73 /* AboutViewController.m in Sources */,
 				992527861DE1D19500A49C12 /* AppDelegate.m in Sources */,
 				992A820E1DE8105900C33AED /* EventsViewController.m in Sources */,
 				992A82111DE8116300C33AED /* ScheduleViewController.m in Sources */,
 				992527831DE1D19500A49C12 /* main.m in Sources */,
+				992CA3B11DE8594B00397A73 /* CountDownViewController.m in Sources */,
 				992A820B1DE80B4700C33AED /* HomeViewController.m in Sources */,
 				992A82171DE81AE700C33AED /* EventsDetailViewController.m in Sources */,
 				992A82141DE811CD00C33AED /* EventsCollectionViewCell.m in Sources */,
@@ -667,6 +679,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 99VZLW8EF5;
 				INFOPLIST_FILE = PresentationLayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -679,6 +692,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 99VZLW8EF5;
 				INFOPLIST_FILE = PresentationLayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

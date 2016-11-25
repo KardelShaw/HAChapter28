@@ -20,6 +20,48 @@
                ReferencedContainer = "container:BusinessLogicLayer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "992527C61DE1D1A300A49C12"
+               BuildableName = "BusinessLogicLayerTests.xctest"
+               BlueprintName = "BusinessLogicLayerTests"
+               ReferencedContainer = "container:BusinessLogicLayer.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "992FDD171DE7202700B52644"
+               BuildableName = "EventsBLTests.xctest"
+               BlueprintName = "EventsBLTests"
+               ReferencedContainer = "container:BusinessLogicLayer.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "992FDD261DE7204100B52644"
+               BuildableName = "ScheduleBLTests.xctest"
+               BlueprintName = "ScheduleBLTests"
+               ReferencedContainer = "container:BusinessLogicLayer.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,36 +70,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "992527C61DE1D1A300A49C12"
-               BuildableName = "BusinessLogicLayerTests.xctest"
-               BlueprintName = "BusinessLogicLayerTests"
-               ReferencedContainer = "container:BusinessLogicLayer.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "992FDD171DE7202700B52644"
-               BuildableName = "EventsBLTests.xctest"
-               BlueprintName = "EventsBLTests"
-               ReferencedContainer = "container:BusinessLogicLayer.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "992FDD261DE7204100B52644"
-               BuildableName = "ScheduleBLTests.xctest"
-               BlueprintName = "ScheduleBLTests"
-               ReferencedContainer = "container:BusinessLogicLayer.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

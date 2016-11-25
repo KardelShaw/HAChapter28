@@ -29,7 +29,7 @@ static NSString * const reuseIdentifier = @"Cell";
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    [self.collectionView registerClass:[EventsCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
@@ -40,7 +40,7 @@ static NSString * const reuseIdentifier = @"Cell";
         COL_COUNT = 5;
     }
     
-    if (self.event == nil || [self.event count] == 0 ) {
+    if (self.events == nil || [self.events count] == 0 ) {
         
         EventsBL *bl = [[EventsBL alloc] init];
         
@@ -49,6 +49,7 @@ static NSString * const reuseIdentifier = @"Cell";
         self.events = array;
         
         [self.collectionView reloadData];
+        NSLog(@"reload");
     }
     
     // Do any additional setup after loading the view.
@@ -91,8 +92,7 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    
+
     if ([self.events count] % COL_COUNT == 0) {
         return [self.events count] / COL_COUNT;
     } else {
@@ -103,23 +103,22 @@ static NSString * const reuseIdentifier = @"Cell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
+
     return COL_COUNT;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
     EventsCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
-    
     // Configure the cell
     
     Events *event = [self.events objectAtIndex:(indexPath.section * COL_COUNT + indexPath.row)];
-    
-    cell.imageView.image = [UIImage imageNamed:event.EventIcon];
+    NSLog(@"EventName = %@, EventIcon = %@", event.EventName, event.EventIcon);
+    cell.imageView.image = [UIImage imageNamed:@"archery.gif"];
     
     cell.label.text = event.EventName;
     
-
+    NSLog(@"cell");
     
     return cell;
 }
