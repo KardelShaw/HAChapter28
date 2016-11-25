@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  HomeViewController.h
 //  PresentationLayer
 //
-//  Created by Kardel on 16/11/20.
+//  Created by Kardel on 16/11/25.
 //  Copyright © 2016年 Kardel. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HomeViewController : UIViewController
 
 @end
-
