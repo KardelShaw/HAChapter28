@@ -10,11 +10,11 @@
 
 @implementation EventsCollectionViewCell
 
-- (id)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        
-    }
-    return self;
-}
+//- (id)initWithFrame:(CGRect)frame {
+//    self = [super initWithFrame:frame];
+//    if (self) {
+//        
+//    }
+//    return self;
+//}
 @end

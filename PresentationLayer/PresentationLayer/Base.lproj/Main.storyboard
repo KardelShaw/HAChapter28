@@ -183,12 +183,11 @@
         <!--Events-->
         <scene sceneID="DCa-48-jaV">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VxV-xI-qDs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <collectionViewController id="WWg-Ql-8uA" customClass="EventsViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="oRG-i7-xEK">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="oRG-i7-xEK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.72167467949999997" green="0.72167467949999997" blue="0.72167467949999997" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="9" id="hmZ-CL-HSX">
                             <size key="itemSize" width="113" height="124"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -209,10 +208,10 @@
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="yaV-HG-n6H" firstAttribute="leading" secondItem="Anw-IK-h1r" secondAttribute="leading" id="PZb-HN-1aD"/>
-                                    <constraint firstAttribute="bottom" secondItem="yaV-HG-n6H" secondAttribute="bottom" id="iCu-Xk-Kyb"/>
-                                    <constraint firstAttribute="trailing" secondItem="yaV-HG-n6H" secondAttribute="trailing" id="rbd-m9-590"/>
-                                    <constraint firstItem="yaV-HG-n6H" firstAttribute="top" secondItem="Anw-IK-h1r" secondAttribute="top" id="uq3-5J-Igf"/>
+                                    <constraint firstItem="yaV-HG-n6H" firstAttribute="leading" secondItem="Anw-IK-h1r" secondAttribute="leading" id="7Pl-rA-apf"/>
+                                    <constraint firstAttribute="trailing" secondItem="yaV-HG-n6H" secondAttribute="trailing" id="PdL-27-xVj"/>
+                                    <constraint firstItem="yaV-HG-n6H" firstAttribute="top" secondItem="Anw-IK-h1r" secondAttribute="top" id="ele-5O-vJq"/>
+                                    <constraint firstAttribute="bottom" secondItem="yaV-HG-n6H" secondAttribute="bottom" id="uOf-nH-2It"/>
                                 </constraints>
                                 <size key="customSize" width="113" height="124"/>
                                 <connections>
@@ -228,6 +227,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" title="Events" id="26a-8t-jqm"/>
                 </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VxV-xI-qDs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="924" y="-445.72713643178412"/>
         </scene>

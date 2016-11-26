@@ -107,18 +107,22 @@ static NSString * const reuseIdentifier = @"Cell";
     return COL_COUNT;
 }
 
+
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     EventsCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     // Configure the cell
     
     Events *event = [self.events objectAtIndex:(indexPath.section * COL_COUNT + indexPath.row)];
-    NSLog(@"EventName = %@, EventIcon = %@", event.EventName, event.EventIcon);
-    cell.imageView.image = [UIImage imageNamed:@"archery.gif"];
+
+    //    NSLog(@"EventName = %@, EventIcon = %@", event.EventName, event.EventIcon);
     
-    cell.label.text = event.EventName;
+    cell.imageView.image = [UIImage imageNamed:event.EventIcon];
     
-    NSLog(@"cell");
+    
+    
+//    NSLog(@"cell");
     
     return cell;
 }
