@@ -65,6 +65,7 @@
 		992A826F1DE827E600C33AED /* PersistenceLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992A826D1DE827E600C33AED /* PersistenceLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		992A82711DE827E600C33AED /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992A82701DE827E600C33AED /* BusinessLogicLayer.framework */; };
 		992A82721DE827E600C33AED /* BusinessLogicLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 992A82701DE827E600C33AED /* BusinessLogicLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		992AAC6C1DEAB05900CD2A28 /* pngImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 992AAC6B1DEAB05900CD2A28 /* pngImage.png */; };
 		992CA3B11DE8594B00397A73 /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992CA3B01DE8594B00397A73 /* CountDownViewController.m */; };
 		992CA3B41DE85A4F00397A73 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992CA3B31DE85A4F00397A73 /* AboutViewController.m */; };
 		992FDD131DE71DD800B52644 /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992FDD121DE71DD800B52644 /* BusinessLogicLayer.framework */; };
@@ -173,6 +174,7 @@
 		992A82421DE8278400C33AED /* wrestling.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = wrestling.gif; path = "../../../../Desktop/iOS开发指南 code/ch28/images/events/wrestling.gif"; sourceTree = "<group>"; };
 		992A826D1DE827E600C33AED /* PersistenceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PersistenceLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		992A82701DE827E600C33AED /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BusinessLogicLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		992AAC6B1DEAB05900CD2A28 /* pngImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pngImage.png; path = ../../../../Downloads/pngImage.png; sourceTree = "<group>"; };
 		992CA3AF1DE8594B00397A73 /* CountDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownViewController.h; sourceTree = "<group>"; };
 		992CA3B01DE8594B00397A73 /* CountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownViewController.m; sourceTree = "<group>"; };
 		992CA3B21DE85A4F00397A73 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 		992A82181DE8276700C33AED /* eventsImages */ = {
 			isa = PBXGroup;
 			children = (
+				992AAC6B1DEAB05900CD2A28 /* pngImage.png */,
 				992A82191DE8278400C33AED /* archery.gif */,
 				992A821A1DE8278400C33AED /* athletics.gif */,
 				992A821B1DE8278400C33AED /* badminton.gif */,
@@ -482,6 +485,7 @@
 				992A82551DE8278400C33AED /* ganlanqiu.gif in Resources */,
 				992A82481DE8278400C33AED /* boxing.gif in Resources */,
 				992A826C1DE8278400C33AED /* wrestling.gif in Resources */,
+				992AAC6C1DEAB05900CD2A28 /* pngImage.png in Resources */,
 				992A82441DE8278400C33AED /* athletics.gif in Resources */,
 				992A82671DE8278400C33AED /* tennis.gif in Resources */,
 				992A82581DE8278400C33AED /* gymnastics-artistic.gif in Resources */,
