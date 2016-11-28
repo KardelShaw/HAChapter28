@@ -565,6 +565,7 @@
 		992527F71DE1D1B200A49C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 99VZLW8EF5;
@@ -583,6 +584,7 @@
 		992527F81DE1D1B200A49C12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 99VZLW8EF5;
@@ -709,6 +711,7 @@
 				992FDCF11DE6D5A800B52644 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		992FDD051DE6E62E00B52644 /* Build configuration list for PBXNativeTarget "ScheduleDAOTests" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +720,7 @@
 				992FDD071DE6E62E00B52644 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

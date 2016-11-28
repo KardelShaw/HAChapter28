@@ -20,3 +20,4 @@ FOUNDATION_EXPORT const unsigned char PersistenceLayerVersionString[];
 #import <PersistenceLayer/ScheduleDAO.h>
 #import <PersistenceLayer/Events.h>
 #import <PersistenceLayer/Schedule.h>
+#import <PersistenceLayer/DBHelper.h>
